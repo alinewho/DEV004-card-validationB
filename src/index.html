@@ -5,9 +5,43 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@400&family=Unbounded:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
   <body>
     <header></header>
-    <main></main>
+    <main class="container">
+      <div class="container left-half">
+      <h1 class="content title">PSICOFEM</h1>
+      <h2>Tu servicio de psicología en línea</h2>
+      <h1 class="bienvenida">Bienvenida</h1>
+      <div>
+        <p class="selecciona">Selecciona el servicio en el que estás interesada:</p>
+      </div>
+      <div class="container">
+        <ul id="buttons">
+          <li><a href="#">Terapia individual</a></li>
+          <li><a href="#">Enfoque feminista</a></li>
+          <li><a href="#">Terapia familiar</a></li>
+          <li><a href="#">Terapia de pareja</a></li>
+        </ul>
+      </div>
+       <div class="content">
+         <br>
+           <h2>Ingresa el número de tu tarjeta de crédito</h2>
+      </div>
+      <div class="content">
+          <input  class="styleInput form-control" id="cardnumber" type="number" required="required" min="0" maxlength="16">
+          <button type="button" id="validate_button" class="sendButton">Validar tarjeta</button>
+           <div>&nbsp;</div> 
+           <div id="result"></div>
+      </div>
+    </div>
+      <div class="right-half photo">
+        <img src="./karl-magnuson-MvxMvPO3S1M-unsplash.jpg">
+      </div>
+    <p></p>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
